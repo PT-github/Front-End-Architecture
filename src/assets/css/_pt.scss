@@ -1,0 +1,161 @@
+/*=====================排课管理begin=========================*/
+$course-list-color1: #E8E8E8; // 线条颜色
+$course-list-color2: #333; // checkbox文字颜色
+$course-list-color3: #FFA800; // 不完整文字颜色
+$course-list-color4: #999999; // 禁止修改课表
+$course-list-color5: #0188FB; // 排课按钮文字和边框颜色
+$course-list-color6: #FFF; // 排课按钮hover背景颜色
+$course-list-color7: rgba(0, 0, 0, .53); // 提示信息背景颜色
+$course-list-color8: #FFF; // 提示信息文字颜色
+$course-list-color9: #0188FB; // 基础数据完整度-查看文字颜色
+$course-list-color10: #e9e9e9; // 基础数据完整度-竖线文字颜色
+$course-list-color11: #FCF3E0; // 查看面板提示文字背景色
+$course-list-color12: #FFAE44; // 查看面板提示文字色
+$course-list-color13: #EF5555; // 查看面板错误icon颜色
+$course-list-color14: #49A9FF; // 查看面板左侧正确icon颜色
+$course-list-color15: #FFA800; // 查看面板警示icon颜色
+$course-list-color16: #333333; // 查看面文字颜色
+$course-list-color17: #E3ECFB; // 查看面板右侧正确文字背景颜色
+$course-list-color18: #0188FB; // 查看面板右侧正确文字颜色
+$course-list-color19: #FEE3E3; // 查看面板右侧无数据文字背景颜色
+$course-list-color20: #EF5555; // 查看面板右侧无数据文字颜色
+$course-list-color21: #FCF3E0; // 查看面板右侧不完整文字背景颜色
+$course-list-color22: #FFA800; // 查看面板右侧不完整文字颜色
+$course-list-color23: #0188FB; // 查看面板中间链接文字颜色
+$course-list-color24: #EF5555; // confirm面板主标题文字颜色
+$course-list-color25: #666666; // confirm面板描述文字颜色
+$course-list-color26: #0188FB; // 列表数据无数据蓝色文字颜色
+$course-list-color27: #999999; // 列表数据无数据灰色文字颜色
+$course-list-color28: #DBDBDB; // 预览课表按钮边框颜色
+$course-list-color30: #666666; // 预览课表按钮文字颜色
+$course-list-color29: #E8E8E8; // 提示框线条颜色
+
+/* =====================排课管理end========================= */
+
+
+/*=====================查看课表begin=========================*/
+$course-table-color1: #FFF; // 背景色
+$course-table-color2: #FFF; // 选项框背景色
+/* =====================查看课表end========================= */
+/*=====================总课程表begin=========================*/
+$course-all-table-color1: #FFF; // 选项框背景色
+/* =====================总课程表end========================= */
+
+/*=====================预排/手动调课界面begin=========================*/
+$course-nav-color1: #B5B7BB; // 固排面板 问号文字颜色
+$course-nav-color2: #BBBBBB; // 固排面板 问号后箭头文字颜色
+
+
+$course-pre-arrange-color: #FFFFFF; // 面板背景色(灰色）
+$course-pre-arrange-color0: #FFF; // 面板背景色(白色）
+$course-pre-arrange-color1: #FCF3E0; // 提示信息背景色
+$course-pre-arrange-color2: #FFAE44; // 提示信息文字色
+$course-pre-arrange-color3: #E8E8E8; // 边框颜色
+
+$course-pre-arrange-color4: #339EFE; // 基础规则标题左边边框颜色
+$course-pre-arrange-color5: #555555; // 基础规则标题文字颜色
+$course-pre-arrange-color6: #A2D0FA; // 基础规则标题文字右侧数字标号背景颜色
+$course-pre-arrange-color7: #FFFFFF; // 基础规则标题文字右侧数字标号文字颜色
+$course-pre-arrange-color8: #777777; // 基础规则选项标题文字颜色（未选中）
+$course-pre-arrange-color9: #999999; // 基础规则选项描述文字颜色（未选中）
+$course-pre-arrange-color10: #FAFAFA; // 基础规则选项背景颜色（未选中）
+$course-pre-arrange-color11: #FFFFFF; // 基础规则选项左侧标记勾选icon的文字颜色（未选中）
+$course-pre-arrange-color12: #EAEAEA; // 基础规则选项左侧标记勾选icon的背景颜色（未选中）
+$course-pre-arrange-color13: #8BC8FE; // 基础规则选项边框颜色（选中）
+$course-pre-arrange-color14: #F6F9FE; // 基础规则选项背景颜色（选中）
+$course-pre-arrange-color14-1: #e8f0fe; // 基础规则选项背景颜色（不能被修改）
+$course-pre-arrange-color15: #339EFE; // 基础规则选项标题文字/描述文字颜色（选中）
+$course-pre-arrange-color16: #75BCFC; // 基础规则选项左侧标记勾选icon的背景颜色（选中）
+
+$course-pre-arrange-color17: #333333; // 左侧选项（固排/禁排）文字颜色（未选中）
+$course-pre-arrange-color18: #FFF; // 左侧选项（固排/禁排）背景颜色（未选中）
+$course-pre-arrange-color19: #E8E8E8; // 左侧选项（固排/禁排）边框颜色（未选中）
+$course-pre-arrange-color20: #FFF; // 左侧选项（固排/禁排）文字颜色（选中）
+$course-pre-arrange-color21: #339EFE; // 左侧选项（固排/禁排）背景/边框颜色（选中）
+
+$course-pre-arrange-color22: #8BC8FE; // 左侧选项边框颜色（选中）
+$course-pre-arrange-color22_1: #BBBBBB; // 左侧选项文字颜色（不能被选中）
+$course-pre-arrange-color23: #339EFE; // 左侧选项文字颜色（选中）
+
+$course-pre-arrange-color24: #FAFAFA; // 中间表格头部和侧边栏背景色
+$course-pre-arrange-color25: #999999; // 中间表格头部和侧边栏文字色
+$course-pre-arrange-color26: #FFF; // 中间表格固排icon文字色
+$course-pre-arrange-color27: #6CB9FE; // 中间表格固排icon背景色
+$course-pre-arrange-color28: #E3ECFB; // 中间表格固排方格背景色
+$course-pre-arrange-color29: #339EFE; // 中间表格固排方格内文字色
+$course-pre-arrange-color29_1: #666666; // 中间表格方格内"各班不一致文字"文字色
+$course-pre-arrange-color30: #FFF; // 中间表格禁排icon文字色
+$course-pre-arrange-color31: #FFAE44; // 中间表格禁排icon背景色
+$course-pre-arrange-color31_1: #3dcf94; // 可拖入背景色
+$course-pre-arrange-color31_1_1: #67C23A; // 可拖入图例文字颜色
+$course-pre-arrange-color31_2: #f56c6c; // 可强行拖入背景色
+$course-pre-arrange-color31_2_1: #F56C6C; // 可强行拖入图例文字颜色
+$course-pre-arrange-color31_3: #999999; // 禁止拖入背景色
+$course-pre-arrange-color31_3_1: #9A9DA3; // 禁止拖入图例文字颜色
+$course-pre-arrange-color32: #FCF3E0; // 中间表格禁排方格背景色
+$course-pre-arrange-color33: #FFAE44; // 中间表格禁排方格内文字色
+$course-pre-arrange-color34: rgba(0, 0, 0, .6); // 中间表格清空文字背景色
+$course-pre-arrange-color35: #FFFFFF; // 中间表格清空文字色
+
+$course-pre-arrange-color36: #FFFFFF; // 操作记录文字颜色
+$course-pre-arrange-color37: #0060B7; // 操作记录文字背景颜色
+$course-pre-arrange-color38: #339EFE; // 预览课表文字背景颜色
+$course-pre-arrange-color39: #FFA800; // 异常班级按钮颜色
+
+$course-hand-arrange-color1: #555555; // 年级班级面板标题文字颜色
+$course-hand-arrange-color2: #E3ECFB; // 左侧班级背景颜色
+$course-hand-arrange-color6: #F6F9FE; // 左侧班级背景颜色（未选中）
+$course-hand-arrange-color3: #339EFE; // 左侧班级文字颜色（选中）
+$course-hand-arrange-color4: #FCB456; // 左侧班级提示数目背景颜色
+$course-hand-arrange-color5: #FFF; // 左侧班级提示数目文字颜色
+$course-hand-arrange-color7: #FDC274; // 排课报告按钮文字颜色
+
+
+$course-schedule-color1: #3dcf94; // 允许被拖入背景色（手动调课课表）
+$course-schedule-color2: #999999; // 禁止被拖入背景色（手动调课课表）
+$course-schedule-color3: #FFF; // 允许被拖入文字色（手动调课课表）
+$course-schedule-color4: #FFF; // 禁止被拖入文字色（手动调课课表）
+$course-schedule-color5: #777777; // 方格文字色（手动调课课表）
+$course-schedule-color6: #f56c6c; // 允许强制被拖入背景色（手动调课课表）
+$course-schedule-color7: #FFFFFF; // 允许强制被拖入文字色（手动调课课表）
+$course-schedule-color8: #269BFB; // 拖拽结束标志被拖拽方格的文字颜色（手动调课课表）
+$course-schedule-color9: #F4F4F5; // 无课背景色
+$course-schedule-color10: #909399; // 无课文字颜色
+
+$teach-course-color1: #999999; // 任课表标题背景色
+$teach-course-color2: #FFF; // 任课表标题文字色
+$teach-course-color3: #FAFAFA; // 面板背景色
+$teach-course-color4: #FFF; // table背景色
+$teach-course-color5: #E3ECFB; // 主调课背景色
+$teach-course-color6: #339EFE; // 主调课文字色
+$teach-course-color7: #FCF3E0; // 被调课背景色
+$teach-course-color8: #FCA845; // 被调课文字色
+
+$course-storage-color1: #EAEAEA; // 暂存区边框色（未选中）
+$course-storage-color3: #8BC8FE; // 暂存区边框色（选中）
+$course-storage-color2: #777777; // 暂存区文字颜色（未选中）
+$course-storage-color4: #339EFE; // 暂存区文字颜色（选中）
+$course-storage-color5: #EFEDED; // 暂存区按钮背景色
+$course-storage-color6: #999999; // 暂存区按钮文字色
+
+$exp-class-table-color1: #F5F5F5; // 异常班级 弹窗标题背景色
+$exp-class-table-color2: #333; // 异常班级 弹窗标题文字颜色
+/* =====================预排/手动调课界面end========================= */
+
+/* =====================排课报告弹出层start========================= */
+$course-report-color1: rgba(0, 0, 0, .5); // 弹出层背景色
+$course-report-color2: #555555; // 标题文字颜色
+$course-report-color3: #FFFFFF; // 右侧背景颜色
+$course-report-color4: #EAEAEA; // 右侧线条颜色
+$course-report-color5: #339EFE; // 右侧线框内数字文字颜色
+$course-report-color6: #888888; // 右侧线框内名称文字颜色
+$course-report-color7: #339EFE; // 右侧标题“整体检测”文字颜色
+$course-report-color8: #FF9231; // 右侧标题“班级排课异常”文字颜色
+$course-report-color9: #555555; // 右侧原因文字颜色
+$course-report-color10: #DDDDDD; // 关闭按钮文字颜色
+// $course-pre-arrange-color7: #FFFFFF; // 基础规则标题文字右侧数字标号文字颜色
+/* =====================排课报告弹出层end========================= */
+
+/* =====================排课报告弹出层start========================= */
+$preview-class-table-color1: #EAEAEA; // 线条颜色
+/* =====================排课报告弹出层end========================= */

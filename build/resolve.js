@@ -6,7 +6,13 @@ let fileResolve = {
   alias: {
     'vue$': 'vue/dist/vue.esm.js',
     '@': path.resolve(config.projectRoot, 'src')
-  }
+  },
+  extensions: [
+    '.js',
+    '.jsx',
+    '.vue',
+    '.json'
+  ]
 };
 
 module.exports = fileResolve;

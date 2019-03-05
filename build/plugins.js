@@ -1,6 +1,6 @@
 const path = require('path');
 const webpack = require('webpack');
-// const CopyWebpackPlugin = require('copy-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
@@ -31,15 +31,16 @@ let plugins = [
   new HtmlWebpackPlugin({ // 指定打包的index.html模板
     filename: 'index.html',
     template: path.join(config.projectRoot, 'index.html'),
+    chunksSortMode: 'none',
     inject: true
-  })
-  // new CopyWebpackPlugin([
-  //   {
-  //     from: path.resolve(config.projectRoot, 'lib'),
-  //     to: path.resolve(config.outputPath, 'lib'),
-  //     ignore: ['.*']
-  //   }
-  // ])
+  }),
+  new CopyWebpackPlugin([
+    {
+      from: path.resolve(config.projectRoot, 'static'),
+      to: path.resolve(config.outputPath, 'static'),
+      ignore: ['.*']
+    }
+  ])
 ];
 
 module.exports = plugins;

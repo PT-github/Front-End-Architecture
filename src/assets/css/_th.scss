@@ -1,0 +1,69 @@
+$color-font1: #333;
+$color-font2: #666;
+$color-font3: #555;
+$color-font4: #999;
+/* =====================教学分工start========================= */
+$teaching-division-color1: #FCF3E0; // 头部提示信息背景颜色
+$teaching-division-color2: #FFAE44; // 头部提示信息字体颜色
+$teaching-division-color3: #EBE8E8; // 左边年级box 边框颜色
+$teaching-division-color4: #F7F7F9; // 左边年级box li hover背景颜色 && 教师视角title背景颜色
+$teaching-division-color5: #2878FF; // 左边年级box li hover字体颜色
+$teaching-division-color6: #F2F2F2; // 剩余未选择课节数title背景颜色
+$teaching-division-color7: #E6E5E5; // 剩余未选择课节数边框颜色
+$teaching-division-color8: #FFA800; // 预警按钮背景颜色
+$teaching-division-color9: #EF5555; // 警告提示icon颜色
+$teaching-division-color10: #CCCCCC; // 请选择教师color颜色
+$teaching-division-color11: #2878FF; // 弹框教师新增color颜色
+$teaching-division-color12: #F5F5F5; // 弹框周总课时背景颜色
+$teaching-division-color13: #2878FF; // 弹框周总课时数字color颜色
+/* =====================教学分工end========================= */
+
+/* =====================场地start========================= */
+$venue-color1: #2878FF; // 新增按钮背景颜色
+$venue-color2: #E8E8E8; // 按钮边框颜色
+$venue-color3: #F4F4F4; // 禁用按钮颜色
+$venue-color4: #EF5555; // 弹框警告字体颜色
+/* =====================场地end========================= */
+
+/* =====================科目信息start========================= */
+$subject-info-color1: #FCF3E0; // 合计行背景颜色
+$subject-info-color2: #FEAF48; // 合计行字体颜色
+$subject-info-color3: #FCF8ED; // 合计行背景颜色（不包括第一格）
+$subject-info-color4: #E3ECFB; // 课时容量行背景颜色
+$subject-info-color5: #2878FF; // 课时容量行字体颜色
+$subject-info-color6: #F0F6FD; // 课时容量行背景颜色（不包括第一格）
+$subject-info-color7: #EF5555; // 课节超限警告icon颜色
+$subject-info-color8: #FEAF48; // 课节过少警告icon颜色
+$subject-info-color9: #FCF3E0; // 弹框title tooltip 背景颜色
+$subject-info-color10: #FFAE44; // 弹框title tooltip 字体颜色
+$subject-info-color11: #E8E8E8; // 弹框上下新增边框颜色
+$subject-info-color12: #EBEBEB; // 课节超限警告border颜色
+/* =====================科目信息end========================= */
+
+/* =====================课时数据start========================= */
+$class-data-color1: #FCF3E0; // 头部tooltip背景颜色
+$class-data-color2: #FFAE44; // 头部tooltip字体颜色
+$class-data-color3: #8C8C8C; // 无课时text字体颜色
+$class-data-color4: #1890FF; // 无课时按钮背景颜色
+$class-data-color5:  #2878FF; // 年级hover字体颜色
+$class-data-color6: #2878FF; // 按钮背景颜色
+$class-data-color7: #FBFBFB; // 课表展示背景颜色
+$class-data-color8: rgba(1,136,251,0.2); // 格子间box-shadow颜色
+$class-data-color9: #F7F7F7; // 时间设置弹框span颜色
+$class-data-color11: #E8E8E8; // 边框颜色
+$class-data-color12: #2878FF;
+$class-data-color13: #FAFAFA;
+$class-data-color14: #F2F2F2;
+/* =====================科目信息end========================= */
+
+/* =====================数据统计start========================= */
+$statistics-color1: #2878FF; // 表格查看详情字体颜色
+$statistics-color2: #FFA800; // 待批字体颜色
+$statistics-color3: #EF5555; // 驳回字体颜色
+// $class-data-color4: #1890FF; // 无课时按钮背景颜色
+// $class-data-color5:  #4E8DFE; // 年级hover字体颜色
+// $class-data-color7: #FBFBFB; // 课表展示背景颜色
+// $class-data-color8: rgba(1,136,251,0.2); // 格子间box-shadow颜色
+// $class-data-color9: #F7F7F7; // 时间设置弹框span颜色
+// $class-data-color11: #E8E8E8; // 边框颜色
+/* =====================科目信息end========================= */

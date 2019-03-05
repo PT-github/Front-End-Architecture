@@ -18,8 +18,7 @@ let urlLoader = [
     loader: 'url-loader',
     options: {
       limit: 1,
-      name: path.posix.join(config.staticPath,
-        'img/[name].[hash:7].[ext]')
+      name: path.posix.join(config.staticPath, 'img/[name].[hash:7].[ext]')
     }
   }, {
     test: /\.(mp4|webm|ogg|mp3|wav|flac|aac)(\?.*)?$/,
@@ -42,27 +41,15 @@ let styleLoaders = utils.styleLoaders();
 
 let babelLoader = {
   test: /\.js/,
-  exclude: [
-    path.resolve(config.projectRoot, 'src/config')
-  ],
+  // exclude: [
+  //   path.resolve(config.projectRoot, 'src/config')
+  // ],
+  exclude: /node_modules/,
   include: [
     path.resolve(config.projectRoot, 'src')
   ],
   use: {
-    loader: 'babel-loader',
-    options: {
-      presets: ['@babel/preset-env'],
-      plugins: [
-        [
-          '@babel/plugin-transform-runtime',
-          {
-            'helpers': false,
-            'regenerator': true
-          }
-        ],
-        ['syntax-dynamic-import']
-      ]
-    }
+    loader: 'babel-loader'
   }
 };
 

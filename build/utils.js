@@ -17,22 +17,50 @@ exports.cssLoaders = function() {
     }
   }
 
-  function generateLessLoaders() {
+  // function generateLessLoaders() {
+  //   var loaders = [
+  //     MiniCssExtractPlugin.loader,
+  //     cssLoader,
+  //     postcssLoader,
+  //     {
+  //       loader: 'less-loader',
+  //       options: {
+  //         sourceMap: config.isDevelopment
+  //       }
+  //     },
+  //     {
+  //       loader: 'sass-resources-loader',
+  //       options: {
+  //         resources: [
+  //           path.resolve(__dirname, '../src/assets/css/common.less'),
+  //         ]
+  //       }
+  //     }
+  //   ];
+  //   return ['vue-style-loader'].concat(loaders)
+  // }
+  function generateScssLoaders() {
     var loaders = [
-      MiniCssExtractPlugin.loader,
+      {
+        loader: MiniCssExtractPlugin.loader,
+        options: {
+          publicPath: '../'
+        }
+      },
       cssLoader,
       postcssLoader,
       {
-        loader: 'less-loader',
+        loader: 'sass-loader',
         options: {
-          sourceMap: config.isDevelopment
+          sourceMap: config.isDevelopment,
+          // data: '@import "@/assets/css/_variable.scss"'
         }
       },
       {
         loader: 'sass-resources-loader',
         options: {
           resources: [
-            path.resolve(__dirname, '../src/assets/css/common.less'),
+            path.resolve(__dirname, '../src/assets/css/_variable.scss'),
           ]
         }
       }
@@ -41,7 +69,12 @@ exports.cssLoaders = function() {
   }
 
   function generateLoaders(loader, loaderOptions) {
-    const loaders = [MiniCssExtractPlugin.loader, cssLoader, postcssLoader];
+    const loaders = [{
+      loader:MiniCssExtractPlugin.loader,
+      options: {
+        publicPath: '../'
+      }
+    }, cssLoader, postcssLoader];
     if (loader) {
       loaders.push({
         loader: loader + '-loader',
@@ -55,9 +88,10 @@ exports.cssLoaders = function() {
   // https://vue-loader.vuejs.org/en/configurations/extract-css.html
   return {
     css: generateLoaders(),
-    // less: generateLoaders('less'),
-    less: generateLessLoaders(),
-    sass: generateLoaders('sass', {indentedSyntax: true})
+    less: generateLoaders('less'),
+    // less: generateLessLoaders(),
+    sass: generateLoaders('sass', {indentedSyntax: true}),
+    scss: generateScssLoaders()
   };
 
 };

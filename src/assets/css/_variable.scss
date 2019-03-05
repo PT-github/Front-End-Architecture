@@ -1,0 +1,208 @@
+$font-color: #333333; // 文字颜色
+$font-blue-color: #2878ff; // 文字颜色
+$font-red-color: #ef5555; // 文字红色颜色
+$button-blue-color: #2878ff; // 按钮蓝色
+$border-color: #e8e8e8;      //头部边框颜色
+$el-input-form-color: #dcdfe6; // 表单输入框边框颜色
+$main-color: #2878ff;     //页面主体蓝色
+$no-data-color: #999;     //无数据字体提示颜色
+
+
+/*=====================框架begin=========================*/
+// $layout-color1: linear-gradient(90deg,rgba(79,141,254,1),rgba(0,190,255,1)); // 头部背景色
+$layout-color1: #2878ff; // 头部背景色
+$layout-color2: #FFF; // 头部文字颜色
+$layout-color3: #FFF; // 头部右侧分隔线颜色
+$layout-color4: #FFF; // 头部用户hover下拉框背景颜色
+$layout-color4_1: #0188FB; // 头部用户hover的背景颜色
+$layout-color4_2: #333; // 头部用户文字颜色
+$layout-color4_3: #666666; // 头部【帐号设置】文字颜色
+$layout-color4_4: #0188FB; // 头部【退出登录】文字颜色
+$layout-color4_5: #E3ECFB; // 头部【退出登录】背景颜色
+$layout-color4_6: #E8E8E8; // 头部下拉线条颜色
+$layout-color4_7: #2878ff; // 头部hover文字颜色
+$layout-color5: #333; // 头部用户hover的文字颜色
+$layout-color6: #CCC; // 头部学校下拉框box-shadow颜色
+$layout-color7: #FFF; // 头部学校下拉框背景颜色
+$layout-color8: #FFF; // 侧边栏头部背景颜色
+$layout-color9: #2878FF; // 侧边栏头部文字颜色
+$layout-color10: #FFF; // 侧边栏二级菜单背景色
+$layout-color11: rgba(227,236,251,1); // 侧边栏二级菜单高亮时背景色
+$layout-color12: #2878FF; // 侧边栏二级菜单高亮时线条颜色
+$layout-color13: #0188FB; // 侧边栏二级菜单高亮时文字颜色
+$layout-color14: #F8F8F8; // 侧边栏一级菜单背景色
+$layout-color15: #F0F0F0 ; // 底部背景色
+$layout-color16: #999999 ; // 底部字体背景色
+$layout-color17: #EF5555 ; // 头部消息badge背景色
+$layout-color18: #FFF ; // 头部消息badge字体颜色
+
+/* =====================框架end========================= */
+
+/*=====================首页begin=========================*/
+$home-color1: #666; // 首页文字颜色1
+$home-color2: #555; // 首页文字颜色2
+$home-color3: #333; // 首页文字颜色3
+$home-color4: #777; // 首页文字颜色4
+$home-color5: #fff; // 首页文字颜色5
+$home-color6: linear-gradient(90deg,rgba(79,141,254,1),rgba(0,190,255,1)); // 渐变色
+$home-color7: #4d4d4d; //首页底部背景顏色
+$home-color8: #eaeaea; //首页申请试用边框颜色
+$home-color9: #ccc; //首页轮播点颜色
+$home-color10: #6db8fd; //首页表单input边框颜色6DB8FD
+$home-color11: #888; // 首页文字颜色11
+$home-color12: #00BEFF; // 首页图标颜色
+$home-color13: #ebebeb; // 首页边框颜色
+$home-color14: #0188fb; // 首页文字颜色10
+$home-color15: #2878FF; // 首页主要颜色(按钮背景)
+$home-color16: #FFBB00; // 首页申请试用按钮颜色
+$home-color17: #F5F5F5; // 首页区域背景颜色
+$home-color18: #1890FF; // 首页忘记密码字体颜色
+$home-color19: #F0F8FF; // 首页客服模态框背景色
+$home-color20: #999; // 首页文字颜色
+$home-color21: #DBDBDB; // 首页输入框统一颜色
+$home-color22: #dcdfe6; // 首页表单输入框边框颜色
+$home-color23: #BBCCD9; // 首页帮助中心图标颜色
+
+/* =====================首页end========================= */
+
+/*=====================个人中心begin=========================*/
+$person-color1: #fff; // 个人中心文字颜色
+$person-color2: #555; // 个人中心文字颜色
+$person-color3: rgba(255,255,255,1); // 个人中心按钮与logo背景色
+$person-color4: #999; // 个人中心文字颜色
+$person-color5: #E8E8E8; // 个人中心学校列表卡片边框颜色
+$person-color6: #FFA800; // 个人中心按钮颜色
+$person-color7: #1890FF; // 个人中心按钮颜色
+$person-color8: #333; // 个人中心文字颜色
+$person-color9: #2878FF; // 个人中心图标颜色和按钮背景色
+$person-color10: #777; // 个人中心文字颜色
+$person-color11: #f7f7f7; // 个人中心获取验证码按钮背景色
+$person-color12: #666; // 个人中心获取验证码按钮文字颜色
+$person-color13: #808080; // 个人中心上传头像提示文字颜色
+$person-color14: #f5f5f5; // 个人中心学校列表的背景颜色
+$person-color15: #444; // 个人中心文字颜色
+$person-color16: #EF5555; // 个人中心退出学校警告颜色
+$person-color17: #0188FB; // 个人中心按钮颜色
+$person-color18: #BBBBBB; // 个人中心按钮颜色#BBBBBB
+$person-color19: #E0E5EE; // 个人中心学校列表背景颜色
+$person-color20: #fff; // 个人中心学卡片过期文字颜色
+$person-color21: #000; // 个人中心学卡片过期背景颜色
+
+/* =====================个人中心end========================= */
+
+/*=====================工作台begin=========================*/
+$working-color1: #0188FB; // 工作台文字颜色
+$working-color2: #E8E8E8; // 工作台头部边框颜色
+$working-color3: #666; // 工作台文字颜色
+$working-color4: #E5E5E5; // 工作台盒子边框颜色
+$working-color5: #E8E8E8; // 工作台边框颜色
+$working-color6: #EF5555; // 工作台边框颜色
+$working-color7: #999; // 工作台文字颜色
+$working-color8: #fff; // 工作台文字颜色
+$working-color9: #666; // 工作台文字颜色
+$working-color10: #2878FF; // 工作台文字颜色
+$working-color11: #000; // 工作台文字颜色#58ACFF
+$working-color12: #58ACFF; // 工作台文字颜色
+$working-color13: #409eff; // 工作台日历选中颜色
+$working-color14: #ebeef5; // 工作台日历边框颜色
+$working-color15: #ffbb00; // 工作台日历边框颜色
+$working-color16: #DBDBDB; // 工作台图标边框颜色
+$working-color17: #CCCCCC; // 工作台图标颜色
+$working-color18: #F5F5F5; // 输入框禁用背景#001C58
+$working-color19: #001C58; // 工作台图标hover背景色
+$working-color20: #339efe; // 工作台学校logo背景色
+
+/*=====================工作台end=========================*/
+
+
+/*=====================title组件begin=========================*/
+$title-color1: transparent; // 标题左边框下边框线条颜色
+$title-color2: #2878ff; // 标题文字左侧粗线条颜色
+$title-color3: #0188FB; // 标题文字右侧文字颜色
+$title-color4: #FFF; // 标题背景颜色
+$title-color5: #333; // 面包屑字体颜色
+$title-color6: #666; // 面包屑字体颜色
+$title-color7: #e8e8e8; // 面包屑字体颜色
+
+/* =====================title组件end========================= */
+/*=====================menu组件begin=========================*/
+$menu-color1: #FFF; // 导航背景色（未触发）
+$menu-color2: #E8E8E8; // 导航线条颜色（未触发）
+$menu-color3: #2878ff; // 导航背景色（触发）
+$menu-color4: #FFF; // 导航文字颜色（触发）
+$menu-color5: #E8E8E8; // 导航条底部线条颜色
+$menu-color6: #FFF; // 标题背景颜色
+/* =====================menu组件end========================= */
+
+/* =====================table组件start========================= */
+$table-color1: #F2F2F2; // 表格th背景色
+$table-color2: #333; // 表格th文字颜色
+$table-color3: #666666; // 表格文字颜色
+$table-color4: #FAFAFA; // 偶数行tr背景色
+$table-color5: #F0F6FD; // 鼠标悬浮到tr的背景色
+$table-color6: #999999; // 按钮文字颜色
+$table-color7: #999; // 操作文字颜色 -- 已废弃
+$table-color8: #E8E8E8; // 操作文字颜色
+$table-color9: #ef5555; // 删除文字颜色
+$table-color10: #e9e9e9; // 操作竖线颜色
+
+/* =====================table组件end========================= */
+
+/* =====================pagination组件start========================= */
+$pagination-color1: #999999; // total文字颜色
+$pagination-color2: #D9D9D9; // 页码背景色（未触发）
+$pagination-color3: #FFF; // 页码线条颜色（未触发）
+$pagination-color4: #2878FF; // 页码背景色（触发）
+$pagination-color5: #2878FF; // 页码线条颜色（触发）
+/* =====================pagination组件end========================= */
+
+/* =====================dialog组件start========================= */
+$dialog-color1: #999999; // total文字颜色
+$dialog-color2: #2878ff; // 按钮背景颜色
+$dialog-color3: #F0F0F0; // 弹框头部背景颜色
+$dialog-color4: #333333; // 弹框头部title文字颜色
+$dialog-color5: #333333; // 删除主要文字颜色
+$dialog-color6: #777777; // 删除提示文字颜色
+$dialog-color7: #A0A0A0; // 导入文字背景颜色
+$dialog-color8: #f5f5f5; // 上传文件名背景颜色
+$dialog-color9: #bbbbbb; // 上传图标颜色
+$dialog-color10: #e5e5e5; // 边框颜色
+$dialog-color11: #f5f5f5; // 教研组成员背景色
+$dialog-color12: #dcdfe6; //表单输入框边框颜色
+/* =====================dialog组件end========================= */
+
+/* =====================上传头像模态框组件start========================= */
+$uploadlogo-color1: #BBB; // 上传头像按钮图标颜色
+$uploadlogo-color2: #F0F0F0; // 上传头像默认背景
+$uploadlogo-color3: #DBDBDB; // 上传头像icon颜色
+$uploadlogo-color4: #666666; // 上传头像文字颜色#808080
+$uploadlogo-color5: #808080; // 上传头像提示文字颜色
+/* =====================上传头像模态框组件组件end========================= */
+/* =====================输入框禁用组件start========================= */
+$input-disabled-color1: #DBDBDB;
+$input-disabled-color2: #F5F5F5;
+/* =====================输入框禁用组件end========================= */
+
+/* =====================date-picker组件start========================= */
+$date-picker-color1: #E5E6E7; // 时间选择组件图标左边内边框颜色
+
+/* =====================date-picker组件end========================= */
+
+/* =====================tree组件start========================= */
+$tree-color1: #818181; // 图标icon颜色
+
+/* =====================tree组件end========================= */
+
+/* =====================alert组件start========================= */
+$alert-color1: #FCF3E0; // warning警告背景颜色
+$alert-color2: #FFA800; // warning警告字体颜色
+
+/* =====================date-picker组件end========================= */
+/* =====================radio组件start========================= */
+$radio-color1: #2878ff; // 单选按钮颜色
+
+/* =====================radio组件end========================= */
+@import './_pt.scss'; // 彭涛的scss文件
+@import './_wf.scss'; // scss文件
+@import './_twy.scss'; // scss文件
+@import './_th.scss'; // scss文件 

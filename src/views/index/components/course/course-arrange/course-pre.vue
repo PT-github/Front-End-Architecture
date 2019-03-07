@@ -338,7 +338,7 @@ export default {
       return o
     }
   },
-  created () {
+  mounted () {
     this.fromHand = this.$route.query.fromHand || ''
     this.params.gradeIds = this.$route.query.gradeIds
     // 学期

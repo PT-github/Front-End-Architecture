@@ -144,7 +144,7 @@ export default {
       confirmContentList: []
     }
   },
-  created () {
+  mounted () {
     // console.log(this.$parent.formInline.classId, this.$parent.classCourseTable)
   },
   methods: {

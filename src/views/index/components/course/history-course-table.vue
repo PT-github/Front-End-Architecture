@@ -24,7 +24,7 @@ export default {
       }
     }
   },
-  created(){  //生命周期里接收参数
+  created () {  //生命周期里接收参数
     this.term = +this.$route.query.term || null
     this.schoolYearId = +this.$route.query.schoolYearId || null
     this.menuList = [{

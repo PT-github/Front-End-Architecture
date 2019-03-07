@@ -36,6 +36,7 @@ export default {
       width: 368px;
       height: 80px;
       padding: 10px;
+      display: inline-block;
       background: #F9F9F9;
       cursor: pointer;
       position: relative;

@@ -678,31 +678,37 @@ export default {
           }
         }
       }
-      for (let j = 0; j < weekArr.length; j++) {
-        let itemArr;
-        // 先处理开始的那一天和结束的那天
-        if (j === 0) {
-          // 开始的一天
-          itemArr = this.weekClassList.filter(item => {
-            // 取开始课节之后的课时
-            return (
-              item.weekDay === weekArr[0] && item.classIndex >= startClassIndex
-            );
-          });
-        } else if (j === weekArr.length - 1) {
-          itemArr = this.weekClassList.filter(item => {
-            // 取结束课节之前的课时
-            return (
-              item.weekDay === weekArr[weekArr.length - 1] &&
-              item.classIndex <= endClassIndex
-            );
-          });
-        } else {
-          itemArr = this.weekClassList.filter(item => {
-            return item.weekDay === weekArr[j];
-          });
+
+      if (weekArr.length >= 10) {
+        this.showClassTable = deepCopy(this.weekClassList);
+      } else {
+        for (let j = 0; j < weekArr.length; j++) {
+          let itemArr;
+          // 先处理开始的那一天和结束的那天
+          if (j === 0) {
+            // 开始的一天
+            itemArr = this.weekClassList.filter(item => {
+              // 取开始课节之后的课时
+              return (
+                item.weekDay === weekArr[0] &&
+                item.classIndex >= startClassIndex
+              );
+            });
+          } else if (j === weekArr.length - 1) {
+            itemArr = this.weekClassList.filter(item => {
+              // 取结束课节之前的课时
+              return (
+                item.weekDay === weekArr[weekArr.length - 1] &&
+                item.classIndex <= endClassIndex
+              );
+            });
+          } else {
+            itemArr = this.weekClassList.filter(item => {
+              return item.weekDay === weekArr[j];
+            });
+          }
+          this.showClassTable = [...this.showClassTable, ...itemArr];
         }
-        this.showClassTable = [...this.showClassTable, ...itemArr];
       }
       // 获取到要提交的数组
       this.submitClassTable = arrayWeightRemoval(

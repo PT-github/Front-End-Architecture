@@ -284,7 +284,7 @@ export default {
       this.filterTableDataFun()
     }
   },
-  created () {
+  mounted () {
     if (this.schoolInfo && this.schoolInfo.stageTypes && this.schoolInfo.stageTypes.length > 0) {
       this.hasStageTyps.push(...this.schoolInfo.stageTypes)
     }

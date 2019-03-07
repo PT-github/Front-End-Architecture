@@ -98,7 +98,7 @@ export default {
       maxCourse: 6, // 每天上课节数
     }
   },
-  created(){  //生命周期里接收参数
+  mounted(){  //生命周期里接收参数
     this.currentSchool = this.$store.state.user.currentSchool; // 获取到当前学校信息
     if(this.currentSchool) {
       this.schoolId = this.currentSchool.uid;

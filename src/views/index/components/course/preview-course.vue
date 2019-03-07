@@ -37,7 +37,7 @@ export default {
       }
     }
   },
-  created(){
+  created () {
     this.params.termId = this.$route.query.termId || ''
     this.params.gradeIds = this.$route.query.gradeIds || ''
     this.params.schoolId = this.$route.query.schoolId || ''

@@ -53,7 +53,7 @@ export default {
       maxCourseWeekDay: 4,
     }
   },
-  created(){  //生命周期里接收参数
+  mounted(){  //生命周期里接收参数
     this.schoolId = this.$parent.schoolId
     if(this.schoolId) {
       this.getCurrentTermData();

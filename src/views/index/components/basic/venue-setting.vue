@@ -217,7 +217,7 @@ export default {
       timerError: null
     }
   },
-  created () {
+  mounted () {
     this.schoolId = this.$store.state.user.currentSchool ? this.$store.state.user.currentSchool.uid : null
     this.getList()
   },

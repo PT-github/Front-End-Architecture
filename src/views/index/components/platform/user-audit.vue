@@ -288,7 +288,7 @@ export default {
       loading: false,
     };
   },
-  created(){  //生命周期里接收参数
+  mounted(){  //生命周期里接收参数
     this.schoolInfoList = this.$store.state.user.schoolInfoList; // 获取到用户学校信息
     this.currentSchool = this.$store.state.user.currentSchool; // 获取到当前学校信息
     this.selectMenu = + this.$route.query.selectMenu || 1 ,  //接受参数关键代码

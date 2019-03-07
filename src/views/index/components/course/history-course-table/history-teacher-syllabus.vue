@@ -119,7 +119,7 @@ export default {
       loading: false,
     }
   },
-  created(){  //生命周期里接收参数
+  mounted(){  //生命周期里接收参数
     this.currentSchool = this.$store.state.user.currentSchool; // 获取到当前学校信息
     this.schoolYearId = +this.$route.query.schoolYearId || null
     this.term = +this.$route.query.term || null

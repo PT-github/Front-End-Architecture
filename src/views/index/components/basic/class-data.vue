@@ -260,7 +260,7 @@ export default {
       return obj
     }
   },
-  created () {
+  mounted () {
     this.$_showLoading()
     if (this.$store.state.user.currentSchool) {
       this.formInline.schoolId = this.$store.state.user.currentSchool.uid

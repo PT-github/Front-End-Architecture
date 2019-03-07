@@ -43,7 +43,7 @@
                     <!-- 学校的地址和学段信息 -->
                     <div class="school-area">
                       <p>{{ currentSchool.provinceName + currentSchool.cityName + currentSchool.areaName }}</p>
-                      <p>{{ periodMess }} <i class="iconfont icon-jichushuju"></i></p>
+                      <p>{{ periodMess }}</p>
                     </div>
                     <div class="tel">
                       <i class="iconfont icon-dianhua"></i>

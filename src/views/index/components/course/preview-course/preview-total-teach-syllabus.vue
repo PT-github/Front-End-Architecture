@@ -48,7 +48,7 @@ export default {
       loading: false,
     }
   },
-  created(){  //生命周期里接收参数
+  mounted(){  //生命周期里接收参数
     this.params.termId = this.$route.query.termId || "";
     this.params.gradeIds = this.$route.query.gradeIds || "";
     this.params.schoolId = this.$route.query.schoolId || "";

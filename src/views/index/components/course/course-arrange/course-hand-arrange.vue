@@ -319,7 +319,7 @@ export default {
       isCourse: false
     }
   },
-  created () {
+  mounted () {
     if (this.$route && this.$route.query) {
       this.params.termId = this.$route.query.termId
       this.params.schoolId = this.$route.query.schoolId

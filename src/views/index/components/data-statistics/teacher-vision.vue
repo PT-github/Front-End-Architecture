@@ -189,7 +189,7 @@ export default {
       termList: []
     }
   },
-  created () {
+  mounted () {
     // this.$_showLoading()
     this.formInline.schoolId = this.$store.state.user.currentSchool ? this.$store.state.user.currentSchool.uid : null
     getTerm({schoolId: this.formInline.schoolId}).then(res => {
@@ -325,20 +325,22 @@ export default {
                 this.$set(this.formInline.time, 0, formatDate(myobj.upStartTime, 'yyyy-MM-dd'))
                 // this.$set(this.formInline.time, 1, formatDate(myobj.upEndTime, 'yyyy-MM-dd'))
                 // this.$set(this.formInline.time, 1, formatDate(new Date().getTime() - 86400000, 'yyyy-MM-dd'))
-                if (new Date().getTime() < parseInt(myobj.upStartTime)) {
+                let ac = new Date().getFullYear() === new Date(parseInt(myobj.upStartTime)).getFullYear() && new Date().getMonth() === new Date(parseInt(myobj.upStartTime)).getMonth() && new Date().getDate() === new Date(parseInt(myobj.upStartTime)).getDate()
+                if (new Date().getTime() < parseInt(myobj.upStartTime) || ac) {
                   this.$set(this.formInline.time, 1, formatDate(myobj.upStartTime, 'yyyy-MM-dd'))
                 } else {
-                  this.$set(this.formInline.time, 1, formatDate(new Date().getTime() - 86400000, 'yyyy-MM-dd'))
+                  this.$set(this.formInline.time, 1, formatDate(new Date().getTime(), 'yyyy-MM-dd'))
                 }
               }
               if (item.schoolTerm === 2) {
                 this.$set(this.formInline.time, 0, formatDate(myobj.startTime, 'yyyy-MM-dd'))
                 // this.$set(this.formInline.time, 1, formatDate(myobj.endTime, 'yyyy-MM-dd'))
                 // this.$set(this.formInline.time, 1, formatDate(new Date().getTime() - 86400000, 'yyyy-MM-dd'))
-                if (new Date().getTime() < parseInt(myobj.startTime)) {
+                let ac = new Date().getFullYear() === new Date(parseInt(myobj.startTime)).getFullYear() && new Date().getMonth() === new Date(parseInt(myobj.startTime)).getMonth() && new Date().getDate() === new Date(parseInt(myobj.startTime)).getDate()
+                if (new Date().getTime() < parseInt(myobj.startTime) || ac) {
                   this.$set(this.formInline.time, 1, formatDate(myobj.startTime, 'yyyy-MM-dd'))
                 } else {
-                  this.$set(this.formInline.time, 1, formatDate(new Date().getTime() - 86400000, 'yyyy-MM-dd'))
+                  this.$set(this.formInline.time, 1, formatDate(new Date().getTime(), 'yyyy-MM-dd'))
                 }
               }
             }
@@ -350,20 +352,22 @@ export default {
               this.$set(this.formInline.time, 0, formatDate(this.termList[0].upStartTime, 'yyyy-MM-dd'))
               // this.$set(this.formInline.time, 1, formatDate(this.termList[0].upEndTime, 'yyyy-MM-dd'))
               // this.$set(this.formInline.time, 1, formatDate(new Date().getTime() - 86400000, 'yyyy-MM-dd'))
-              if (new Date().getTime() < parseInt(this.termList[0].upStartTime)) {
+              let ac = new Date().getFullYear() === new Date(parseInt(this.termList[0].upStartTime)).getFullYear() && new Date().getMonth() === new Date(parseInt(this.termList[0].upStartTime)).getMonth() && new Date().getDate() === new Date(parseInt(this.termList[0].upStartTime)).getDate()
+              if (new Date().getTime() < parseInt(this.termList[0].upStartTime) || ac) {
                 this.$set(this.formInline.time, 1, formatDate(this.termList[0].upStartTime, 'yyyy-MM-dd'))
               } else {
-                this.$set(this.formInline.time, 1, formatDate(new Date().getTime() - 86400000, 'yyyy-MM-dd'))
+                this.$set(this.formInline.time, 1, formatDate(new Date().getTime(), 'yyyy-MM-dd'))
               }
             }
             if (res.data[0].schoolTerm === 2) {
               this.$set(this.formInline.time, 0, formatDate(this.termList[0].startTime, 'yyyy-MM-dd'))
               // this.$set(this.formInline.time, 1, formatDate(this.termList[0].endTime, 'yyyy-MM-dd'))
               // this.$set(this.formInline.time, 1, formatDate(new Date().getTime() - 86400000, 'yyyy-MM-dd'))
-              if (new Date().getTime() < parseInt(this.termList[0].startTime)) {
+              let ac = new Date().getFullYear() === new Date(parseInt(this.termList[0].startTime)).getFullYear() && new Date().getMonth() === new Date(parseInt(this.termList[0].startTime)).getMonth() && new Date().getDate() === new Date(parseInt(this.termList[0].startTime)).getDate()
+              if (new Date().getTime() < parseInt(this.termList[0].startTime) || ac) {
                 this.$set(this.formInline.time, 1, formatDate(this.termList[0].startTime, 'yyyy-MM-dd'))
               } else {
-                this.$set(this.formInline.time, 1, formatDate(new Date().getTime() - 86400000, 'yyyy-MM-dd'))
+                this.$set(this.formInline.time, 1, formatDate(new Date().getTime(), 'yyyy-MM-dd'))
               }
             }
           }

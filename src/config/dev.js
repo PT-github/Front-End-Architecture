@@ -1,8 +1,3 @@
-// 服务 开发环境
-// export default {
-//   // 用户服务
-//   USER: 'http://apidev.aorise.org/education-approval-manage'
-// }
 export default {
   // XXXX系统
   APPROVALURL: 'http://apidev.aorise.org/education-approval-manage', // 审批服务地址
@@ -24,7 +19,7 @@ export default {
   STATISTICS: 'http://apidev.aorise.org/education-data-analyze', // 数据统计
   AUTH: 'http://apidev.aorise.org/education-user-related',
   COMMON: 'http://apidev.aorise.org/smart-city-common',
-  ADDPREFIX: 'http://localhost:8080/#',
+  ADDPREFIX: 'http://webdev.aorise.org/web-education/#',
   FILEPATH: 'http://file.aorise.org/education/', // 文件地址前缀
   // SCORE_MANAGE: 'http://10.116.65.121:8081/' // 成绩管理
   SCORE_MANAGE: 'http://apidev.aorise.org/education-score-manage/' // 成绩管理

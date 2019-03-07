@@ -1,15 +1,16 @@
+import 'babel-polyfill';
 import Vue from 'vue';
 import '@/assets/css/element-user.scss';
 import VueCropper from 'vue-cropper'
-Vue.use(VueCropper)
 import { TimeSelect, Loading, MessageBox, Message, Collapse, CollapseItem, Button, Select, Option, Input, Table, TableColumn, 
-  Form, FormItem, Pagination, Dialog, DatePicker, Radio, RadioGroup, RadioButton, Upload, Switch,
-  Checkbox, CheckboxButton, CheckboxGroup, InputNumber, Tree, Tooltip, Alert, Col, Row, Popover, Carousel, CarouselItem, Autocomplete, Cascader,Breadcrumb,
-  BreadcrumbItem, OptionGroup} from 'element-ui';
+         Form, FormItem, Pagination, Dialog, DatePicker, Radio, RadioGroup, RadioButton, Upload, Switch,
+         Checkbox, CheckboxButton, CheckboxGroup, InputNumber, Tree, Tooltip, Alert, Col, Row, Popover, Carousel, CarouselItem, Autocomplete, Cascader,Breadcrumb,
+         BreadcrumbItem, OptionGroup} from 'element-ui';
 Vue.use(TimeSelect)
 Vue.use(Collapse)
 Vue.use(CollapseItem)
 Vue.use(Button)
+Vue.use(VueCropper)
 Vue.use(Dialog)
 Vue.use(Pagination)
 Vue.use(Form)
@@ -81,7 +82,7 @@ if (userInfo) { // 派发存储用户信息到store的action
 if (currentSchool) { // 派发存储用户信息到store的action
   store.dispatch('SetCurrentSchool', currentSchool)
 }
-store.dispatch('updateUserMsgCountStatus') // 刷新页面就更新store中的未读消息数
+// store.dispatch('updateUserMsgCountStatus') // 刷新页面就更新store中的未读消息数
 Vue.config.productionTip = false
 
 new Vue({

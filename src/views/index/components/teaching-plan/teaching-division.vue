@@ -479,7 +479,7 @@ export default {
       'schoolYear'
     ])
   },
-  created () {
+  mounted () {
     this.initData();
   },
   // destroyed () {

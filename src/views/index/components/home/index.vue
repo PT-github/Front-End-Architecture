@@ -343,7 +343,7 @@
 </template>
 <script>
 // 图片引入
-import team from "../../../../assets/img/zxr-xmjl.png";
+import team from "../../../../assets/img/曾新荣-项目经理.png";
 import team1 from "../../../../assets/img/苏海宾-软件工程师.png";
 import team2 from "../../../../assets/img/彭涛-前端工程师.png";
 import team3 from "../../../../assets/img/文建纲-软件工程师.png";
@@ -746,7 +746,7 @@ export default {
     // 页面一进来就将字典信息全部存入本地
     getAllDic().then(res => {
       storage.setItem("dic", JSON.stringify(res.data));
-      this.$_setDic();
+      this.$_setDic(res.data);
       this.periodListFormDic = this.dicFormater("SYS_BASE_STAGE_TYPE"); // 获取到学段字典信息
       this.questionTypeFormDic = this.dicFormater(
         // 获取到问题类型字典信息

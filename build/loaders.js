@@ -43,7 +43,7 @@ let styleLoaders = utils.styleLoaders();
 let babelLoader = {
   test: /\.js/,
   exclude: [
-    path.resolve(config.projectRoot, 'src/config')
+    // path.resolve(config.projectRoot, 'src/config')
   ],
   include: [
     path.resolve(config.projectRoot, 'src')

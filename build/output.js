@@ -6,7 +6,7 @@ let output = config.isDevelopment ? {
   path: config.outputPath,
   publicPath: '/'
 } : {
-  filename: 'js/[name].[chunkhash:7].js',
+  filename: 'js/[name].[hash:7].js',
   path: config.outputPath,
   publicPath: config.publicPath
 };
